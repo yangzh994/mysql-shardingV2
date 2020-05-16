@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///system
+    username: root
+    password: yzh123
+
+mybatis:
+  mapper:
+    package:
+      path: com.example.mysqlsharding.mapper
+  mapper-locations: mapper/*
+  configuration:
+    map-underscore-to-camel-case: true
